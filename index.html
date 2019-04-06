@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <script src="myScript.js"></script>
+    <link href="style.css" rel="stylesheet" >
+    <title>Lissajous Figure</title>
+  </head>
+
+  <body>
+
+    <h1 id="Title">Lissajous Figure</h1>
+    <p id="SubTitle">リサージュ図形</p>
+
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+
+    <ul id="parameter">
+      <li class="button"><button id="Fx">fx</button></li>
+      <li class="value"></li>
+      <li class="button"><button id="Fy">fy</button></li>
+      <li class="value"></li>
+      <li class="button"><button id="Pd">P</button></li>
+      <li class="value"></li>
+      <li class="button"><button id="Fr">fr</button></li>
+      <li class="value"></li>
+      <li class="button"><button id="Re">RESET</button></li>
+    </ul>
+
+    <ul id="formula">
+      <li>x = A cos( fr*θ ) * cos( fx*θ + P )</li>
+      <li>y = A cos( fr*θ ) * sin( fy*θ     )</li>
+    </ul>
+
+  </body>
+
+</html>
